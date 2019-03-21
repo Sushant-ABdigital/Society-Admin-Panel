@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/font/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <title>Admin Panel</title>
+</head>
+
+<body class="container">
+    <div class="topbar">
+            <div class="topbar-namebox">
+                <h6 class="topbar-namebox--name">Karma Kastle CHS</h6>
+                <div class="filterbutton filterbutton-s">
+                    <label class="dropdown">
+                        <div class="dd-button">
+                            Admin
+                        </div>
+                        <input type="checkbox" class="dd-input" id="test">
+                        <ul class="dd-menu">
+                            <li>User</li>
+                            <li>User - 2</li>
+                            <li>user - 3</li>
+                        </ul>
+                    </label>
+                </div>
+            </div>
+            <div class="topbar-userbox">
+                <div class="topbar-userbox--notificationbox">
+                    <span class="topbar-userbox--notificationbox--icon flaticon-notifications">
+                    <div class="topbar-userbox--notificationbox--number">14</div>
+                    </span>
+                </div>
+                <span class="topbar-userbox--separator">&vert;</span>
+                <div class="topbar-userbox--avatar">
+                    <div class="filterbutton filterbutton-tp">
+                        <label class="dropdown">
+                            <div class="dd-button">
+                                Hitesh Mehta
+                            </div>
+                            <input type="checkbox" class="dd-input" id="test">
+                            <ul class="dd-menu">
+                                <li>Settings</li>
+                                <li>Profile</li>
+                                <li>Log Out</li>
+                            </ul>
+                        </label>
+                    </div>
+                    <img class="topbar-userbox--avatar-userphoto" src="./img/user.png" alt="user image">
+                </div>
+            </div>
+        </div>
+        <div class="searchbar">
+            <div class="searchbar-name">
+                <h6 class="searchbar-name-heading">Committee Dashboard</h6>
+            </div>
+            <div class="searchbar-searchsection">
+                <form action="#" class="search">
+                    <input type="text" placeholder="Search" class="search__input">
+                    <button class="search__button">
+                        <span class="flaticon-musica-searcher"></span>
+                    </button>
+                </form>
+            </div>
+            <div class="searchbar-filterbutton filterbutton">
+                <label class="dropdown">
+                    <div class="dd-button">
+                        Set Filter
+                    </div>
+                    <input type="checkbox" class="dd-input" id="test">
+                    <ul class="dd-menu">
+                        <li>Filter Option 1</li>
+                        <li>Filter Option 2</li>
+                        <li>Filter Option 3</li>
+                    </ul>
+                </label>
+            </div>
+        </div>
+    <div class="mainpannel">
+        <div class="mainpannel-sidebar">
+            <ul class="mainpannel-sidebar-listitems">
+                <li class="mainpannel-sidebar-listitems-item active" id="1">
+                    <span class="flaticon-home"></span>
+                    <p class="list-item-name">Home</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="2">
+                    <span class="flaticon-support"></span>
+                    <p class="list-item-name">Forum</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="3">
+                    <span class="flaticon-book-of-black-cover-closed"></span>
+                    <p class="list-item-name">Directory</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="3">
+                    <span class="flaticon-multiple-users-silhouette"></span>
+                    <p class="list-item-name">Members</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="3">
+                    <span class="flaticon-networking"></span>
+                    <p class="list-item-name">Meetings</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="3">
+                    <span class="flaticon-photo"></span>
+                    <p class="list-item-name">Album</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="3">
+                    <span class="flaticon-time"></span>
+                    <p class="list-item-name">Events</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="3">
+                    <span class="flaticon-file"></span>
+                    <p class="list-item-name">Registers</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="3">
+                    <span class="flaticon-cogwheel"></span>
+                    <p class="list-item-name">Settings</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="3">
+                    <span class="flaticon-list"></span>
+                    <p class="list-item-name">Billings</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="3">
+                    <span class="flaticon-warning-speech-bubble"></span>
+                    <p class="list-item-name">Complaints</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="3">
+                    <span class="flaticon-supermarket-sale-tag"></span>
+                    <p class="list-item-name">Buzzar</p>
+                </li>
+                <li class="mainpannel-sidebar-listitems-item" id="3">
+                    <span class="flaticon-chair"></span>
+                    <p class="list-item-name">Inventory</p>
+                </li>
+            </ul>
+        </div>
+        <div class="mainpannel-content">
+            <section class="news">
+                <h4 class="news-title">Important News</h4>
+                <span class="news-separator">&vert;</span>
+                <p class="news-detail">Mumbai: Monthly maintenance, of your co-operative housing society (CHS), will not attract GST...
+                    <a href="#"
+                        class="news-link">Read more...</a>
+                </p>
+            </section>
+            <section class="action">
+                <div class="action-1">
+                    <div class="action-1-icon action-icon">
+                        <span class="flaticon-danger"></span>
+                    </div>
+                    <p class="action-1-detail action-detail">Send Notice</p>
+                </div>
+                <div class="action-2">
+                    <div class="action-2-icon action-icon">
+                        <span class="flaticon-multimedia"></span>
+                    </div>
+                    <p class="action-2-detail action-detail">Send SMS</p>
+                </div>
+                <div class="action-3">
+                    <div class="action-3-icon action-icon">
+                        <span class="flaticon-arroba-symbol"></span>
+                    </div>
+                    <p class="action-3-detail action-detail">Send Email</p>
+                </div>
+                <div class="action-4">
+                    <div class="action-4-icon action-icon">
+                        <span class="flaticon-notification"></span>
+                    </div>
+                    <p class="action-4-detail action-detail">Send Notification</p>
+                </div>
+            </section>
+            <section class="status">
+                <div class="status-maintenance">
+                    <div class="status-maintenance-image">
+                        <span class="flaticon-database"></span>
+                    </div>
+                    <div class="status-maintenance-details">
+                        <h6 class="status-maintenance-details--head overview-heading">Maintenance
+                            <br>Due</h6>
+                        <p class="status-maintenance-details--amount overview-amount">&#8377 88K</p>
+                        <div class="status-maintenance-details--remaining">
+                            <p class="status-maintenance-details--remaining-d">12</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="status-cash">
+                    <div class="status-cash-image">
+                        <span class="flaticon-wallet"></span>
+                    </div>
+                    <div class="status-cash-details">
+                        <h6 class="status-cash-details--head overview-heading">Cash in hand</h6>
+                        <p class="status-cash-details--amount overview-amount">&#8377 28.5K</p>
+                    </div>
+                </div>
+                <div class="status-bankbalance">
+                    <div class="status-bankbalance-image">
+                        <span class="flaticon-credit-card-with-tick"></span>
+                    </div>
+                    <div class="status-bankbalance-details">
+                        <h6 class="status-bankbalance-details--head overview-heading">Bank Balance</h6>
+                        <p class="status-bankbalance-details--amount overview-amount">&#8377 4.78K</p>
+                    </div>
+                </div>
+                <div class="status-complaints">
+                    <div class="status-complaints-image">
+                        <span class="flaticon-speech-bubble-with-question-mark"></span>
+                    </div>
+                    <div class="status-complaints-details">
+                        <h6 class="status-complaints-details--head overview-heading">complaints</h6>
+                        <div class="status-complaints-details--bars">
+                            <div class="status-complaints-details--bars-1">
+                                <h6 class="bar-legend overview-heading">Open</h6>
+                                <div class="pro-bar" data-percent="48%">
+                                    <div class="pro-bar-backside"></div>
+                                    <div class="pro-bar-frontside pro-bar--48"></div>
+                                </div>
+                                <h6 class="bar-reading overview-heading">48%</h6>
+                            </div>
+                            <div class="status-complaints-details--bars-2">
+                                <h6 class="overview-heading">In progress</h6>
+                                <div class="pro-bar" data-percent="64%">
+                                    <div class="pro-bar-backside"></div>
+                                    <div class="pro-bar-frontside pro-bar--64"></div>
+                                </div>
+                                <h6 class="overview-heading">64%</h6>
+                            </div>
+                            <div class="status-complaints-details--bars-3">
+                                <h6 class="overview-heading">Overdue</h6>
+                                <div class="pro-bar" data-percent="38%">
+                                    <div class="pro-bar-backside"></div>
+                                    <div class="pro-bar-frontside pro-bar--38"></div>
+                                </div>
+                                <h6 class="overview-heading">38%</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="status-call">
+                    <div class="status-call-image">
+                        <span class="flaticon-healthy"></span>
+                    </div>
+                </div>
+            </section>
+            <section class="panelA">
+                <div class="panelA-society_finances">
+                    <div class="panelA-society_finances--heading">
+                        <div class="panelA-society_finances--heading-1">
+                            <h5 class="display-heading--big">Society Finances</h5>
+                            <p class="content">Download reports</p>
+                        </div>
+                        <div class="panelA-society_finances--heading-2">
+                            <div class="icon-bg-1">
+                                <span class="flaticon-download-button"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panelA-society_finances--content">
+                        <div class="panelA-society_finances--content-legend">
+                            <div id="dashboard_div">
+                                <div id="legend_div"></div>
+                            </div>
+                            <button class="themebutton">View Details</button>
+                        </div>
+                        <div class="panelA-society_finances--content-chart">
+                            <div class="panelA-society_finances--content-chart-title">
+                                <h6 class="searchbar-name-heading">Balance Sheet</h6>
+                            </div>
+                            <div id="dashboard_div">
+                                <div class="panelA-society_finances--content-chart-filter" id="filter_div"></div>
+                                <div id="chart_div"></div>
+                            </div>
+                            <div class="panelA-society_finances--content-chart-buttons">
+                                <button class="themebutton">Income &amp; Expenses</button>
+                                <button class="themebutton-inverse">Balance Sheet</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelA-residents_manager">
+                    <div class="panelA-residents_manager--heading head-style-1">
+                        <h5 class="display-heading--big">Resident Manager</h5>
+                        <div class="icon-bg">
+                            <span class="flaticon-add-1"></span>
+                        </div>
+                    </div>
+                    <div class="panelA-residents_manager--content">
+                        <div class="panelA-residents_manager--content-1">
+                            <div class="unit-wrapper panelA-residents_manager--content-1-wrapper">
+                                <h6 class="unit">84</h6>
+                            </div>
+                            <h6 class="display-heading--small">Total units</h6>
+                        </div>
+                        <div class="panelA-residents_manager--content-2">
+                            <div class="unit-wrapper panelA-residents_manager--content-2-wrapper">
+                                <h6 class="unit">10</h6>
+                            </div>
+                            <h6 class="display-heading--small">Owners</h6>
+                        </div>
+                        <div class="panelA-residents_manager--content-3">
+                            <div class="unit-wrapper panelA-residents_manager--content-3-wrapper">
+                                <h6 class="unit">04</h6>
+                            </div>
+                            <h6 class="display-heading--small">Tenants</h6>
+                        </div>
+                        <div class="panelA-residents_manager--content-4">
+                            <div class="unit-wrapper panelA-residents_manager--content-4-wrapper">
+                                <h6 class="unit">10</h6>
+                            </div>
+                            <h6 class="display-heading--small">Vacant Units</h6>
+                        </div>
+                        <div class="panelA-residents_manager--content-5">
+                            <button class="themebutton">Transfer unit</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="panelB">
+                <div class="panelB-notice_board">
+                    <div class="panelB-notice_board--heading head-style-1">
+                        <h5 class="display-heading--big">Notice Board</h5>
+                        <div class="icon-bg">
+                            <span class="flaticon-add-1"></span>
+                        </div>
+                    </div>
+                    <div class="panelB-notice_board--content">
+                        <div class="panelB-notice_board--content-1">
+                            <p class="notice-date content">11/08/2017</p>
+                            <p class="notice-detail content">Fire Drill Training</p>
+                            <p class="notice-button published">Published</p>
+                        </div>
+                        <div class="panelB-notice_board--content-2">
+                            <p class="notice-date content">15/08/2017</p>
+                            <p class="notice-detail content">Independence Day</p>
+                            <p class="notice-button published">Published</p>
+                        </div>
+                        <div class="panelB-notice_board--content-3">
+                            <p class="notice-date content">30/09/2017</p>
+                            <p class="notice-detail content">Diwali Event</p>
+                            <p class="notice-button published">Published</p>
+                        </div>
+                        <div class="panelB-notice_board--content-4">
+                            <p class="notice-date content">10/10/2017</p>
+                            <p class="notice-detail content">Navratri Event</p>
+                            <p class="notice-button draft">Draft</p>
+                        </div>
+                        <div class="panelB-notice_board--content-5">
+                            <p class="notice-date content">30/11/2017</p>
+                            <p class="notice-detail content">Exterior Repairs</p>
+                            <p class="notice-button draft">Draft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelB-helpdesk">
+                    <div class="panelB-helpdesk--heading head-style-2">
+                        <h5 class="display-heading--big">Helpdesk Tracker</h5>
+                        <div class="filterbutton-mod">
+                            <label class="dropdown">
+                                <div class="dd-button">
+                                    All
+                                </div>
+                                <input type="checkbox" class="dd-input" id="test">
+                                <ul class="dd-menu">
+                                    <li>Filter Option 1</li>
+                                    <li>Filter Option 2</li>
+                                    <li>Filter Option 3</li>
+                                </ul>
+                            </label>
+                        </div>
+                        <button class="themebutton-small">Settings</button>
+                        <div class="icon-bg">
+                            <span class="flaticon-add-1"></span>
+                        </div>
+                    </div>
+                    <div class="panelB-helpdesk--content">
+                        <div class="panelB-notice_board--content-1 panelB-helpdesk--content-title">
+                            <p class="helpdesk-heading display-heading--small-dark">Categories</p>
+                            <p class="helpdesk-heading display-heading--small-dark green">Open</p>
+                            <p class="helpdesk-heading display-heading--small-dark yellow">In Progress</p>
+                            <p class="helpdesk-heading display-heading--small-dark blue">Closed</p>
+                            <p class="helpdesk-heading display-heading--small-dark red">Overdue</p>
+                        </div>
+                        <div class="panelB-notice_board--content-2">
+                            <p class="content">All</p>
+                            <p class="content-number">82</p>
+                            <p class="content-number">82</p>
+                            <p class="content-number">82</p>
+                            <p class="content-number">82</p>
+                        </div>
+                        <div class="panelB-notice_board--content-3">
+                            <p class="content">Plumbing</p>
+                            <p class="content-number">13</p>
+                            <p class="content-number">13</p>
+                            <p class="content-number">13</p>
+                            <p class="content-number">13</p>
+                        </div>
+                        <div class="panelB-notice_board--content-4">
+                            <p class="content">Housekeeping</p>
+                            <p class="content-number">28</p>
+                            <p class="content-number">28</p>
+                            <p class="content-number">28</p>
+                            <p class="content-number">28</p>
+                        </div>
+                        <div class="panelB-notice_board--content-5">
+                            <p class="content">Civil Work</p>
+                            <p class="content-number">10</p>
+                            <p class="content-number">10</p>
+                            <p class="content-number">10</p>
+                            <p class="content-number">10</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="panelC">
+                <div class="panelC-admin_directory">
+                    <div class="panelC-admin_directory--heading head-style-1">
+                        <h5 class="display-heading--big">Admin Directory</h5>
+                        <div class="icon-bg">
+                            <span class="flaticon-add-1"></span>
+                        </div>
+                    </div>
+                    <div class="panelC-admin_directory--content">
+                        <div class="panelC-admin_directory--content-1">
+                            <div class="unit-wrapper panelC-admin_directory--content-1-wrapper">
+                                <h6 class="unit">14</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Committee</h6>
+                        </div>
+                        <div class="panelC-admin_directory--content-2">
+                            <div class="unit-wrapper panelC-admin_directory--content-2-wrapper">
+                                <h6 class="unit">10</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Maintenance staff</h6>
+                        </div>
+                        <div class="panelC-admin_directory--content-3">
+                            <div class="unit-wrapper panelC-admin_directory--content-3-wrapper">
+                                <h6 class="unit">08</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Employees</h6>
+                        </div>
+                        <div class="panelC-admin_directory--content-4">
+                            <div class="unit-wrapper panelC-admin_directory--content-4-wrapper">
+                                <h6 class="unit">07</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Resident Staff</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelC-meetings">
+                    <div class="panelC-meetings--heading head-style-1">
+                        <h5 class="display-heading--big">Meetings</h5>
+                        <div class="icon-bg">
+                            <span class="flaticon-add-1"></span>
+                        </div>
+                    </div>
+                    <div class="panelC-meetings--content">
+                        <div class="panelC-meetings--content-1">
+                            <span class="flaticon-time"></span>
+                            <div class="panelC-meetings--content-1-details">
+                                <p class="display-heading--small textalign-left">Next Meeting: New Year Eve 2018</p>
+                                <p class="content-small">30/10/2017, 10.30am</p>
+                            </div>
+                        </div>
+                        <div class="panelC-meetings--content-2">
+                            <span class="flaticon-time"></span>
+                            <div class="panelC-meetings--content-2-details">
+                                <p class="display-heading--small textalign-left">General Body Meet</p>
+                                <p class="content-small">14/10/2017</p>
+                            </div>
+                            <button class="themebutton-small mr-5">View Minutes</button>
+                        </div>
+                        <div class="panelC-meetings--content-3">
+                            <span class="flaticon-time"></span>
+                            <div class="panelC-meetings--content-3-details">
+                                <p class="display-heading--small textalign-left">Committee Meet</p>
+                                <p class="content-small">20/10/2017</p>
+                            </div>
+                            <button class="themebutton-small-pending mr-5">View Minutes</button>
+                        </div>
+                        <div class="panelC-meetings--content-4">
+                            <span class="flaticon-time"></span>
+                            <div class="panelC-meetings--content-1-details">
+                                <p class="content textalign-left">Past Meetings Minutes (<span class="meeting-count">128</span>) </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelC-documents">
+                    <div class="panelC-documents--heading head-style-1">
+                        <h5 class="display-heading--big">Documents</h5>
+                        <div class="icon-bg">
+                            <span class="flaticon-add-1"></span>
+                        </div>
+                    </div>
+                    <div class="panelC-documents--content">
+                        <span class="flaticon-folder-4"></span>
+                        <p class="content">Society NOC (<span class="society-noc-value">14</span>) </p>
+                        <span class="flaticon-folder-4"></span>
+                        <p class="content">Property Tax (<span class="property-tax-value">14</span>)</p>
+                        <span class="flaticon-folder-4"></span>
+                        <p class="content textalign-left">Water Tax</p>
+                        <span class="flaticon-folder-4"></span>
+                        <p class="content textalign-left">Society Vendors (<span>14</span>)</p>
+                        <span class="flaticon-folder-4"></span>
+                        <p class="content textalign-left">Society bills (<span>14</span>)</p>
+                    </div>
+                </div>
+            </section>
+            <section class="panelD">
+                <div class="panelD-visitor_tracker">
+                    <div class="panelD-visitor_tracker--heading head-style-1">
+                        <h5 class="display-heading--big">Visitor Tracker</h5>
+                        <div class="icon-bg">
+                            <span class="flaticon-add-1"></span>
+                        </div>
+                    </div>
+                    <div class="panelD-visitor_tracker--content">
+                        <div class="panelD-visitor_tracker--content-1">
+                            <div class="unit-wrapper panelD-visitor_tracker--content-1-wrapper">
+                                <h6 class="unit">22</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Visitor Recorded</h6>
+                        </div>
+                        <div class="panelD-visitor_tracker--content-2">
+                            <div class="unit-wrapper panelD-visitor_tracker--content-2-wrapper">
+                                <h6 class="unit">11</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Expected Visitor</h6>
+                        </div>
+                        <div class="panelD-visitor_tracker--content-3">
+                            <div class="unit-wrapper panelD-visitor_tracker--content-3-wrapper">
+                                <h6 class="unit">04</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Staff In</h6>
+                        </div>
+                        <div class="panelD-visitor_tracker--content-4">
+                            <div class="unit-wrapper panelD-visitor_tracker--content-4-wrapper">
+                                <h6 class="unit">12</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Visitor Vehicle</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelD-parking_master">
+                    <div class="panelD-parking_master--heading head-style-4">
+                        <h5 class="display-heading--big">Parking Master</h5>
+                        <button class="themebutton-small-gray">View All</button>
+                        <div class="icon-bg">
+                            <span class="flaticon-add-1"></span>
+                        </div>
+                    </div>
+                    <div class="panelD-parking_master--content">
+                        <div class="panelD-parking_master--content-1">
+                            <div class="unit-wrapper panelD-parking_master--content-1-wrapper">
+                                <h6 class="unit">225</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Card / Vans</h6>
+                        </div>
+                        <div class="panelD-parking_master--content-2">
+                            <div class="unit-wrapper panelD-parking_master--content-2-wrapper">
+                                <h6 class="unit">318</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Bikers / Scooters</h6>
+                        </div>
+                        <div class="panelD-parking_master--content-3">
+                            <div class="unit-wrapper panelD-parking_master--content-3-wrapper">
+                                <h6 class="unit">65</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Bicycles</h6>
+                        </div>
+                        <div class="panelD-parking_master--content-4">
+                            <div class="unit-wrapper panelD-parking_master--content-4-wrapper">
+                                <h6 class="unit">06</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Others</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelD-vendor_management">
+                    <div class="panelD-vendor_management--heading head-style-1">
+                        <h5 class="display-heading--big">Vendor Management</h5>
+                    </div>
+                    <div class="panelD-vendor_management--content">
+                        <div class="panelD-vendor_management--content-details">
+                            <p class="content">AMC Vendors</p>
+                            <p class="content-number-sb">12</p>
+                            <p class="content">Society Vendors</p>
+                            <p class="content-number-sb">05</p>
+                            <p class="content">Resident Vendors</p>
+                            <p class="content-number-sb">04</p>
+                            <p class="content">Emergency Contacts</p>
+                            <p class="content-number-sb">19</p>
+                        </div>
+                        <button class="themebutton">Manage Vendors</button>
+                    </div>
+                </div>
+            </section>
+            <section class="panelE">
+                <div class="panelE-facility_bookings">
+                    <div class="panelE-facility_bookings--heading head-style-1">
+                        <h5 class="display-heading--big">Facility Bookings</h5>
+                        <div class="icon-bg">
+                            <span class="flaticon-add-1"></span>
+                        </div>
+                    </div>
+                    <div class="panelE-facility_bookings--content">
+                        <div class="panelE-facility_bookings--content-1">
+                            <div class="unit-wrapper panelE-facility_bookings--content-1-wrapper">
+                                <h6 class="unit">20</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Total Facilities</h6>
+                        </div>
+                        <div class="panelE-facility_bookings--content-2">
+                            <div class="unit-wrapper panelE-facility_bookings--content-2-wrapper">
+                                <h6 class="unit">18</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Pending</h6>
+                        </div>
+                        <div class="panelE-facility_bookings--content-3">
+                            <div class="unit-wrapper panelE-facility_bookings--content-3-wrapper">
+                                <h6 class="unit">07</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Approved</h6>
+                        </div>
+                        <div class="panelE-facility_bookings--content-4">
+                            <div class="unit-wrapper panelE-facility_bookings--content-4-wrapper">
+                                <h6 class="unit">03</h6>
+                            </div>
+                            <h6 class="display-heading--smaller">Rejected</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelE-events">
+                    <div class="panelE-events--heading head-style-1">
+                        <h5 class="display-heading--big">Events</h5>
+                        <div class="icon-bg">
+                            <span class="flaticon-add-1"></span>
+                        </div>
+                    </div>
+                    <div class="panelE-events--content">
+                        <div class="panelE-events--content-1">
+                            <div class="panelE-events--content-1-details">
+                                <p class="display-heading--small textalign-left pt-10 pl-10">Diwali Fun Night 2017</p>
+                                <p class="content pb-10 pl-10">19/10/2017, 7pm onwards</p>
+                            </div>
+                            <button class="themebutton">Send Invite</button>
+                        </div>
+                        <div class="panelE-events--content-2">
+                            <div class="panelE-events--content-2-details">
+                                <p class="display-heading--small textalign-left pt-10 pl-10">New Year Eve Party</p>
+                                <p class="content pb-10 pl-10">31/12/2017, 10pm onwards</p>
+                            </div>
+                            <button class="themebutton">Send Invite</button>
+                        </div>
+                        <div class="panelE-events--content-3">
+                            <div class="panelE-events--content-3-details">
+                                <p class="content">Events Albums (12)</p>
+                            </div>
+                            <p class="content">Past Events (12)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelE-society_poll">
+                    <div class="panelE-society_poll--heading head-style-6">
+                        <h5 class="display-heading--big">Society Poll</h5>
+                        <button class="themebutton-small-gray">View All</button>
+                    </div>
+                    <div class="panelE-society_poll--content">
+                        <div class="panelE-society_poll--content-1">
+                            <p class="display-heading--small">Holiday Destination 2018</p>
+                            <p class="content textalign-center">124 votes</p>
+                            <button class="themebutton mt-5">View Results</button>
+                        </div>
+                        <div class="panelE-society_poll--content-2">
+                            <p class="content textalign-center">OR</p>
+                        </div>
+                        <div class="panelE-society_poll--content-3">
+                            <button class="themebutton">Create New Poll</button>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+            <section class="panelF">
+                <div class="panelF-action_tracker">
+                    <div class="panelF-action_tracker--heading head-style-1">
+                        <h5 class="display-heading--big">Action Tracker</h5>
+                    </div>
+                    <div class="panelF-action_tracker--content">
+                        <div class="panelF-action_tracker--content-1">
+                            <p class="notice-detail content">Property Tax</p>
+                            <p class="notice-detail content">Rahul Sinha</p>
+                            <p class="notice-detail content">A wing - 704</p>
+                            <p class="notice-date content">14/06/2017</p>
+                            <p class="notice-button published">Assigned</p>
+                        </div>
+                        <div class="panelF-action_tracker--content-2">
+                            <p class="notice-detail content">Water Tax</p>
+                            <p class="notice-detail content">Rahul Sinha</p>
+                            <p class="notice-detail content">B Wing - 101</p>
+                            <p class="notice-date content">14/06/2017</p>
+                            <p class="notice-button published">Published</p>
+                        </div>
+                        <div class="panelF-action_tracker--content-3">
+                            <p class="notice-detail content">Terrace Booking</p>
+                            <p class="notice-detail content">Rahul Sinha</p>
+                            <p class="notice-detail content">A Wing - 805</p>
+                            <p class="notice-date content">14/06/2017</p>
+                            <p class="notice-button published">Published</p>
+                        </div>
+                        <div class="panelF-action_tracker--content-4">
+                            <p class="notice-detail content">Play Zone</p>
+                            <p class="notice-detail content">Rahul Sinha</p>
+                            <p class="notice-detail content">D Wing - 303</p>
+                            <p class="notice-date content">14/06/2017</p>
+                            <p class="notice-button draft">Draft</p>
+                        </div>
+                        <div class="panelF-action_tracker--content-5">
+                            <p class="notice-detail content">Club House</p>
+                            <p class="notice-detail content">Rahul Sinha</p>
+                            <p class="notice-detail content">A Wing - 201</p>
+                            <p class="notice-date content">30/11/2017</p>
+                            <p class="notice-button pending">Pending</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panelF-inventory_master">
+                    <div class="panelF-inventory_master--heading head-style-1">
+                        <h5 class="display-heading--big">Inventory Master</h5>
+                        <div class="icon-bg">
+                            <span class="flaticon-add-1"></span>
+                        </div>
+                    </div>
+                    <div class="panelF-inventory_master--content">
+                        <p class="content textalign-left">Diesel</p>
+                        <p class="content-number-sb">50 Ltrs</p>
+                        <p class="content">Water Tanker</p>
+                        <p class="content-number-sb">2</p>
+                        <p class="content">Society Chairs</p>
+                        <p class="content-number-sb">100</p>
+                        <p class="content">Society Speaker</p>
+                        <p class="content-number-sb">04</p>
+                        <p class="content">Society Lights</p>
+                        <p class="content-number-sb">06</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script id="template-legend-marker" type="text/html">
+        <div class="legend-marker" data-rowIndex="{{index}}">
+            <div class="legend-marker-color" style="background-color: {{color}}"></div>
+            <p class="content">{{label}}</p>
+            <p class="content-number-sb textalign-left">&#8377 {{value}}</p>
+        </div>
+    </script>
+    <script src="javascript/main.js"></script>
+</body>

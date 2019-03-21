@@ -1,0 +1,107 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 01/03/2018 18:25
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-caret-down:before { content: "\f100"; }
+.flaticon-notifications:before { content: "\f101"; }
+.flaticon-notification:before { content: "\f102"; }
+.flaticon-chair:before { content: "\f103"; }
+.flaticon-healthy:before { content: "\f104"; }
+.flaticon-photo:before { content: "\f105"; }
+.flaticon-musica-searcher:before { content: "\f106"; }
+.flaticon-credit-card-with-tick:before { content: "\f107"; }
+.flaticon-download-button:before { content: "\f108"; }
+.flaticon-speech-bubble-with-question-mark:before { content: "\f109"; }
+.flaticon-supermarket-sale-tag:before { content: "\f10a"; }
+.flaticon-download-interface-symbol-of-down-arrow-on-a-tray:before { content: "\f10b"; }
+.flaticon-cogwheel:before { content: "\f10c"; }
+.flaticon-multiple-users-silhouette:before { content: "\f10d"; }
+.flaticon-book-of-black-cover-closed:before { content: "\f10e"; }
+.flaticon-home:before { content: "\f10f"; }
+.flaticon-arroba-symbol:before { content: "\f110"; }
+.flaticon-warning-speech-bubble:before { content: "\f111"; }
+.flaticon-multimedia:before { content: "\f112"; }
+.flaticon-wallet:before { content: "\f113"; }
+.flaticon-support:before { content: "\f114"; }
+.flaticon-time:before { content: "\f115"; }
+.flaticon-networking:before { content: "\f116"; }
+.flaticon-danger:before { content: "\f117"; }
+.flaticon-database:before { content: "\f118"; }
+.flaticon-file:before { content: "\f119"; }
+.flaticon-folder-4:before { content: "\f11a"; }
+.flaticon-folder-3:before { content: "\f11b"; }
+.flaticon-add-1:before { content: "\f11c"; }
+.flaticon-add:before { content: "\f11d"; }
+.flaticon-folder-2:before { content: "\f11e"; }
+.flaticon-folder-1:before { content: "\f11f"; }
+.flaticon-list:before { content: "\f120"; }
+.flaticon-calendar:before { content: "\f121"; }
+    
+    $font-Flaticon-caret-down: "\f100";
+    $font-Flaticon-notifications: "\f101";
+    $font-Flaticon-notification: "\f102";
+    $font-Flaticon-chair: "\f103";
+    $font-Flaticon-healthy: "\f104";
+    $font-Flaticon-photo: "\f105";
+    $font-Flaticon-musica-searcher: "\f106";
+    $font-Flaticon-credit-card-with-tick: "\f107";
+    $font-Flaticon-download-button: "\f108";
+    $font-Flaticon-speech-bubble-with-question-mark: "\f109";
+    $font-Flaticon-supermarket-sale-tag: "\f10a";
+    $font-Flaticon-download-interface-symbol-of-down-arrow-on-a-tray: "\f10b";
+    $font-Flaticon-cogwheel: "\f10c";
+    $font-Flaticon-multiple-users-silhouette: "\f10d";
+    $font-Flaticon-book-of-black-cover-closed: "\f10e";
+    $font-Flaticon-home: "\f10f";
+    $font-Flaticon-arroba-symbol: "\f110";
+    $font-Flaticon-warning-speech-bubble: "\f111";
+    $font-Flaticon-multimedia: "\f112";
+    $font-Flaticon-wallet: "\f113";
+    $font-Flaticon-support: "\f114";
+    $font-Flaticon-time: "\f115";
+    $font-Flaticon-networking: "\f116";
+    $font-Flaticon-danger: "\f117";
+    $font-Flaticon-database: "\f118";
+    $font-Flaticon-file: "\f119";
+    $font-Flaticon-folder-4: "\f11a";
+    $font-Flaticon-folder-3: "\f11b";
+    $font-Flaticon-add-1: "\f11c";
+    $font-Flaticon-add: "\f11d";
+    $font-Flaticon-folder-2: "\f11e";
+    $font-Flaticon-folder-1: "\f11f";
+    $font-Flaticon-list: "\f120";
+    $font-Flaticon-calendar: "\f121";

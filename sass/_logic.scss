@@ -1,0 +1,24 @@
+// $spacing: 1rem;
+// $barColor: #71cfa2;
+// $backColor: #ddd;
+// $textShadow: rgba(black, 0.35) 1px 1px 1px;
+
+// $step: 1;
+// $loops: round(100 / $step);
+// $increment: 360 / $loops;
+// $half: round($loops / 2);
+// @for $i from 0 through $loops {
+//   .progress--bar.progress--#{$i * $step}:after {
+//     width: $i * $step * 1%;
+//   }
+//   .progress--circle.progress--#{$i * $step}:after {
+//     @if $i < $half {
+//       $nextDeg: 90deg + ($increment * $i);
+//       background-image: linear-gradient(90deg, $backColor 50%, transparent 50%, transparent), linear-gradient($nextDeg, $barColor 50%, $backColor 50%, $backColor);
+//     }
+//     @else {
+//       $nextDeg: -90deg + ($increment * ($i - $half));
+//       background-image: linear-gradient($nextDeg, $barColor 50%, transparent 50%, transparent), linear-gradient(270deg, $barColor 50%, $backColor 50%, $backColor);
+//     }
+//   }
+// }

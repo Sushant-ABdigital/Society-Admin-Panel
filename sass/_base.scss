@@ -1,0 +1,235 @@
+//Color Varibles
+$off-white: rgba(255, 255, 255, 0.63);
+$theme-dark: #1a184f;
+$white: #ffffff;
+$blue: #00b0ff;
+$dark-blue: #006696;
+$themefontcolor: #432985;
+
+//font variables
+$font-primary: 'Open Sans', sans-serif;
+
+//font-sizes
+$light: 300;
+$regular: 400;
+$semibold: 600;
+$bold: 700;
+$extra-bold: 800;
+
+//RESPONSIVENESS
+$bp-largest: 75em;  //1200px
+$bp-md: 64em; //1024px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-xs: 48em; //768px
+$bp-medium-a: 43.75em; //700px
+$bp-small: 37.5em; //600px
+$bp-small-a: 31.25em; // 500px
+$bp-smaller: 25em; //400px
+
+//Prefixes
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @media only screen and (max-width: $bp-md) {
+        font-size: 50%;
+    }
+}
+
+body{
+    font-family: $font-primary;
+    color: $themefontcolor;
+}
+
+//custom css starts
+body{
+    background-color: rgba(105, 105, 105, 0.144);
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(4, min-content);
+    grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] 1fr [full-end];
+}
+
+//Pre defined classes
+.overview-heading{
+    font-size: 1.2rem;
+    font-weight: $bold;
+    text-transform: uppercase;
+}
+.overview-amount {
+    font-size: 2.0rem;
+    font-weight: $semibold;
+    text-transform: uppercase;
+}
+
+.display-heading--big{
+    font-size: 1.6rem;
+    font-weight: $regular;
+    color: $white;
+}
+
+.display-heading--small{
+    font-size: 1.3rem;
+    font-weight: $semibold;
+    color: $themefontcolor;
+    text-align: center;
+}
+
+.display-heading--small-r{
+    font-size: 1.4rem;
+    font-weight: $regular;
+    color: $themefontcolor;
+    text-align: center;
+}
+
+//check if we want below:
+.display-heading--smaller{
+    font-size: 1.3rem;
+    font-weight: $regular;
+    color: $themefontcolor;
+    text-align: center;
+}
+
+.display-heading--small-dark{
+    font-size: 1.3rem;
+    font-weight: $regular;
+    color: black;
+    padding: 5px 0;
+}
+
+.content{
+    font-size: 1.3rem;
+    font-weight: $regular;
+}
+
+.content-small {
+    font-size: 1.1rem;
+    font-weight: $regular;
+}
+
+.content-number{
+    font-size: 1.3rem;
+    font-weight: $regular;
+    text-align: center;
+
+}
+.content-number-sb{
+    font-size: 1.3rem;
+    font-weight: $semibold;
+    text-align: center;
+}
+
+.head-style-1{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5e35b1;
+    padding: 1rem 2rem;
+    .icon-bg{
+        justify-self: end;
+    }
+}
+  
+.head-style-2{
+    display: grid;
+    grid-template-columns: max-content 3fr min-content min-content;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: start;
+    background-color: #5e35b1;
+    padding: 1rem 2rem;
+    @media screen and (max-width: 413px){
+        grid-template-columns: max-content 1fr;
+        justify-items: end;
+    }
+}
+
+.head-style-3{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5e35b1;
+    padding: 1rem 0;
+    justify-items: end;
+    align-content: stretch;
+}
+
+.head-style-4{
+    display: grid;
+    grid-template-columns: 1fr max-content min-content;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5e35b1;
+    padding: 1rem 2rem;
+    grid-gap: 1.5rem;
+    .icon-bg{
+        justify-self: end;
+    }
+    @media (max-width: 610px){
+        grid-template-columns: 1fr min-content;
+    }
+}
+
+.head-style-6{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5e35b1;
+    padding: 1rem 2rem;
+}
+//Helper classes
+.pt-10{
+    padding-top: 1rem;
+}
+.pb-10{
+    padding-bottom: 1rem;
+}
+
+.pl-10{
+    padding-left: 1rem;
+}
+.mt-10{
+    margin-top: 1rem;
+}
+.mb-10{
+    margin-bottom: 1rem;
+}
+
+.ml-10{
+    margin-left: 1rem;
+}
+.mt-5{
+    margin-top: 0.5rem;
+}
+.mb-5{
+    margin-bottom: 0.5rem;
+}
+
+.ml-5{
+    margin-left: 0.5rem;
+}
+
+.mr-5{
+    margin-right: 0.5rem;
+}
+
+.textalign-left{
+    text-align: left!important;
+}
+.textalign-center{
+    text-align: center!important;
+}
+

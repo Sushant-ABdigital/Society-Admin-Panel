@@ -1,0 +1,78 @@
+.searchbar{
+    background-color: white;
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: 6fr repeat(2, 1fr);
+    justify-content: start;
+    grid-gap: 1rem;
+    padding: 15px 20px;
+    @media screen and (max-width: $bp-medium){
+        grid-template-columns: 5fr repeat(2, 1fr);
+    }
+    @media screen and (max-width: $bp-small-a){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &-name{
+        &-heading{
+            font-size: 1.8rem;
+            font-weight: $bold;
+        }
+    }
+    &-searchsection{
+        justify-self: end;
+        @media screen and (max-width: $bp-small-a){
+           order: 1;
+            grid-column: 1 / -1;
+            width: 100%;
+        }
+        .search{
+            display: flex;
+            &__input{
+                align-self: center;
+                font-family: inherit;
+                font-size: inherit;
+                background-color:white;
+                border-radius: 4px;
+                border: 2px solid #ebebeb ;
+                padding: 0.7rem 2rem;
+                margin-right: -4.00rem;
+                &:focus{
+                    outline: none;
+                    background-color:#ebebeb;
+                }
+                &::-webkit-input-placeholder{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    color:$dark-blue;
+                }
+                @media screen and (max-width: $bp-small-a){
+                    width: 100%;
+                    align-self: stretch;
+                }
+            }
+            &__button{
+                border: none;
+                background-color:#ebebeb;
+                border-bottom-right-radius: 4px;
+                border-top-right-radius: 4px;
+                &:focus{
+                    outline: none;
+                    border: none;
+                }
+                span{
+                    background-color: transparent;
+                    padding: 10px;
+                    &::before{
+                        color: #a2aadb;
+                    }
+                }
+            }
+        }
+    }
+    &-filterbutton{
+        justify-self: end;
+        .dd-button{
+            font-size: 1.3rem;
+        }
+    }
+}
