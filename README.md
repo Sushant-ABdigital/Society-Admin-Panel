@@ -7,6 +7,6 @@ You can see the the current version [here](https://admin-panel-test.netlify.com/
 ## Features
 - Responsive
 - Used google chart librry for charts on this panel.
-- Customized legends in google library  - I found it was one of the difficult task!
+- Customized legends in google library  - It was one of the difficult task!
 
 Thanks.
